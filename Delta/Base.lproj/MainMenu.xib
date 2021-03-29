@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Delta" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="off-1f-HMd" customClass="StatusMenuController" customModule="Delta" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="VtY-dj-wvL" id="QQd-Ol-BWv"/>
+            </connections>
+        </customObject>
+        <menu id="VtY-dj-wvL">
+            <items>
+                <menuItem title="📓" id="BQO-Kj-GhW">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="launchNotes:" target="off-1f-HMd" id="hV5-Rr-dHV"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="✨" id="Zjr-hI-82P">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="newNote:" target="off-1f-HMd" id="DEo-PW-H0v"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="📋" id="ACi-KN-Usa">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="pasteClip:" target="off-1f-HMd" id="emR-GA-NPQ"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="🔍" id="kq8-yc-NAu">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="searchNotes:" target="off-1f-HMd" id="xui-jY-fTg"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="☠️" id="Sxn-p5-rzX">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="off-1f-HMd" id="guy-Bz-mfq"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
+    </objects>
+</document>
